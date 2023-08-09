@@ -50,7 +50,7 @@ function findCords() {
     var cityName = inputText.value;
     console.log(cityName);
 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=b4b1c2852d4a3caa947f3c6fb930bc77`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=b4b1c2852d4a3caa947f3c6fb930bc77`)
         .then(response => response.json())
         .then(data => {
 
