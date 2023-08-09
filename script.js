@@ -1,6 +1,9 @@
+//initial variables
+
 var lat = '';
 var long = '';
 
+//creating all querySelectors
 
 var inputText = document.querySelector("#inputText");
 var button = document.querySelector("#button1");
@@ -35,15 +38,11 @@ var fivthTemp = document.querySelector("#fivthTemp");
 var fivthWind = document.querySelector("#fivthWind");
 var fivthHum = document.querySelector("#fivthHum");
 
+//event listener on submit button click
 
 button.addEventListener('click', findCords);
 
-// api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={b4b1c2852d4a3caa947f3c6fb930bc77}
-
-
-// http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid={b4b1c2852d4a3caa947f3c6fb930bc77}
-
-
+//this function uses the input and converts city name to coordinates
 
 function findCords() {
 
@@ -65,6 +64,7 @@ function findCords() {
 
 }
 
+//this function uses coords and finds weather information
 function findWeather(lat1, long1) {
 
     var lat2 = lat1;
@@ -79,6 +79,7 @@ function findWeather(lat1, long1) {
 
 }
 
+//this function will display the weather on the page
 function displayWeather(data1) {
     console.log(data1);
     console.log(data1.list[0].dt_txt);
@@ -124,6 +125,7 @@ function displayWeather(data1) {
     fivthHum.textContent = "Humidity: " + data1.list[34].main.humidity;
 }
 
+//this function converts kelvin temp to common usage
 function convertTemp(temp) {
 
     var final = 0;
