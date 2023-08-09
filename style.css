@@ -8,3 +8,66 @@ header {
     background-color: aquamarine;
     text-align: center;
 }
+
+.input {
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.main-page {
+    display:flex;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    display: flex;
+    flex-direction: row;
+}
+
+.information {
+    display: flex;
+    flex-direction:column;
+    margin-left: 50px;
+    background-color: aqua;
+}
+
+.firstday {
+    display:flex;
+    flex-direction:column;
+    background-color: aqua;
+    margin:30px;
+}
+
+.secondday {
+    display:flex;
+    flex-direction:column;
+    background-color: aqua;
+    margin:30px;
+}
+
+.thirdday {
+    display:flex;
+    flex-direction:column;
+    background-color: aqua;
+    margin:30px;
+}
+
+.fourthday {
+    display:flex;
+    flex-direction:column;
+    background-color: aqua;
+    margin:30px;
+}
+
+.fivthday {
+    display:flex;
+    flex-direction:column;
+    background-color: aqua;
+    margin:30px;
+}
