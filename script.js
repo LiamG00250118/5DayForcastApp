@@ -92,13 +92,36 @@ function displayWeather(data1) {
 
 
 
-    firstDay.textContent = data1.list[1].dt_txt;
+    firstDay.textContent = data1.list[2].dt_txt;
+    firstTemp.textContent = "Temp: " + convertTemp(data1.list[2].main.temp);
+    firstWind.textContent = "Wind: " + data1.list[2].wind.speed;
+    firstHum.textContent = "Humidity: " + data1.list[2].main.humidity;
 
-    firstTemp.textContent = "Temp: " + convertTemp(data1.list[1].main.temp);
-    firstWind.textContent = "Wind: " + data1.list[1].wind.speed;
-    firstHum.textContent = "Humidity: " + data1.list[1].main.humidity;
 
 
+    secondDay.textContent = data1.list[10].dt_txt;
+    secondTemp.textContent = "Temp: " + convertTemp(data1.list[10].main.temp);
+    secondWind.textContent = "Wind: " + data1.list[10].wind.speed;
+    secondHum.textContent = "Humidity: " + data1.list[10].main.humidity;
+
+
+    thirdDay.textContent = data1.list[18].dt_txt;
+    thirdTemp.textContent = "Temp: " + convertTemp(data1.list[18].main.temp);
+    thirdWind.textContent = "Wind: " + data1.list[18].wind.speed;
+    thirdHum.textContent = "Humidity: " + data1.list[18].main.humidity;
+
+
+
+    fourthDay.textContent = data1.list[26].dt_txt;
+    fourthTemp.textContent = "Temp: " + convertTemp(data1.list[26].main.temp);
+    fourthWind.textContent = "Wind: " + data1.list[26].wind.speed;
+    fourthHum.textContent = "Humidity: " + data1.list[26].main.humidity;
+
+
+    fivthDay.textContent = data1.list[34].dt_txt;
+    fivthTemp.textContent = "Temp: " + convertTemp(data1.list[34].main.temp);
+    fivthWind.textContent = "Wind: " + data1.list[34].wind.speed;
+    fivthHum.textContent = "Humidity: " + data1.list[34].main.humidity;
 }
 
 function convertTemp(temp) {
